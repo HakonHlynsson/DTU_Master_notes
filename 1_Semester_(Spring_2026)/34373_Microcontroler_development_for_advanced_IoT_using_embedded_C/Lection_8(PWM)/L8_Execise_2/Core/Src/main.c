@@ -30,18 +30,17 @@ int main(void)
   HAL_Init();
   SystemClock_Config();
   MX_GPIO_Init();
-  MX_TIM2_Init();
-  HAL_TIM_PWM_Start(&htim2, TIM_CHANNEL_1);
-  MX_TIM17_Init();
-  HAL_TIM_PWM_Start(&htim17, TIM_CHANNEL_1);
   MX_TIM1_Init();
+  MX_TIM2_Init();
+  MX_TIM17_Init();
   HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_4);
+  HAL_TIM_PWM_Start(&htim2, TIM_CHANNEL_1);
+  HAL_TIM_PWM_Start(&htim17, TIM_CHANNEL_1);
 
   uint32_t Duty_Max = 1000; // Max puls value
 
   while (1)
   {
-
 	  // Get the time variable that shows the 5 sec from 0-5000
 	  uint32_t time = HAL_GetTick() % 5000;
 
@@ -90,18 +89,11 @@ int main(void)
 	  		  blue = Decrease_PWM;
 	  		  break;
 	  }
-	  // TIM2 Channel 1 (Pin PA0)
-	  __HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_1, red);
-
-	  // TIM1 Channel 4 (Pin PC3)
+	  // Inserting the PWM values
 	  __HAL_TIM_SET_COMPARE(&htim1, TIM_CHANNEL_4, green);
-
-	  // TIM17 Channel 1 (Pin PA7)
+	  __HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_1, red);
 	  __HAL_TIM_SET_COMPARE(&htim17, TIM_CHANNEL_1, blue);
-
-
   }
-
 }
 
 /**

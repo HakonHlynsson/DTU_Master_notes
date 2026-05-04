@@ -94,7 +94,7 @@ Z27 !s110 1775637401
 !i10b 1
 Z28 !s108 1775637401.000000
 Z29 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:\Users\hakon\Documents\DTU\Kandidat\Hakon_master_notes\1_Semester_(Spring_2026)\34349_FPGA_design_for_communication_systems\Gigabite_Ethernet\Ethernet_Reg.vhd|
-!s107 C:\Users\hakon\Documents\DTU\Kandidat\Hakon_master_notes\1_Semester_(Spring_2026)\34349_FPGA_design_for_communication_systems\Gigabite_Ethernet\Ethernet_Reg.vhd|
+Z30 !s107 C:\Users\hakon\Documents\DTU\Kandidat\Hakon_master_notes\1_Semester_(Spring_2026)\34349_FPGA_design_for_communication_systems\Gigabite_Ethernet\Ethernet_Reg.vhd|
 !i113 1
 R13
 R14
@@ -114,7 +114,7 @@ R27
 !i10b 1
 R28
 R29
-Z30 !s107 C:\Users\hakon\Documents\DTU\Kandidat\Hakon_master_notes\1_Semester_(Spring_2026)\34349_FPGA_design_for_communication_systems\Gigabite_Ethernet\Ethernet_Reg.vhd|
+R30
 !i113 1
 R13
 R14
@@ -161,6 +161,49 @@ R37
 !i113 1
 R13
 R14
+Efcs_reg
+Z38 w1776238794
+R1
+R2
+R3
+!i122 43
+R4
+Z39 8C:\Users\hakon\Documents\DTU\Kandidat\Hakon_master_notes\1_Semester_(Spring_2026)\34349_FPGA_design_for_communication_systems\Gigabite_Ethernet\FCS_Reg.vhd
+Z40 FC:\Users\hakon\Documents\DTU\Kandidat\Hakon_master_notes\1_Semester_(Spring_2026)\34349_FPGA_design_for_communication_systems\Gigabite_Ethernet\FCS_Reg.vhd
+l0
+L15 1
+VNQIhD^[??9LF<6AYAZ=^b2
+!s100 Yk0;XQD[?G>4bD_<=]he91
+R8
+32
+Z41 !s110 1776238801
+!i10b 1
+Z42 !s108 1776238801.000000
+Z43 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:\Users\hakon\Documents\DTU\Kandidat\Hakon_master_notes\1_Semester_(Spring_2026)\34349_FPGA_design_for_communication_systems\Gigabite_Ethernet\FCS_Reg.vhd|
+!s107 C:\Users\hakon\Documents\DTU\Kandidat\Hakon_master_notes\1_Semester_(Spring_2026)\34349_FPGA_design_for_communication_systems\Gigabite_Ethernet\FCS_Reg.vhd|
+!i113 1
+R13
+R14
+Abehavioral
+R1
+R2
+R3
+DEx4 work 7 fcs_reg 0 22 NQIhD^[??9LF<6AYAZ=^b2
+!i122 43
+l39
+L31 86
+V`H><ObQjLFCXaF36P<NWO2
+!s100 ^NGgaDlOolfIfz<F1]VL00
+R8
+32
+R41
+!i10b 1
+R42
+R43
+Z44 !s107 C:\Users\hakon\Documents\DTU\Kandidat\Hakon_master_notes\1_Semester_(Spring_2026)\34349_FPGA_design_for_communication_systems\Gigabite_Ethernet\FCS_Reg.vhd|
+!i113 1
+R13
+R14
 Efcs_state_machine
 w1774438520
 R1
@@ -184,26 +227,67 @@ R8
 !i113 1
 R13
 R14
+Efifo
+Z45 w1776074755
+R2
+R3
+!i122 32
+R4
+Z46 8C:\Users\hakon\Documents\DTU\Kandidat\Hakon_master_notes\1_Semester_(Spring_2026)\34349_FPGA_design_for_communication_systems\Gigabite_Ethernet\FIFO.vhd
+Z47 FC:\Users\hakon\Documents\DTU\Kandidat\Hakon_master_notes\1_Semester_(Spring_2026)\34349_FPGA_design_for_communication_systems\Gigabite_Ethernet\FIFO.vhd
+l0
+Z48 L18 1
+VKHET;gz=Dc@_7]CXI3?ao2
+!s100 2;@o=>10j4P_?ZgZZ[EiF1
+R8
+32
+Z49 !s110 1776074761
+!i10b 1
+Z50 !s108 1776074761.000000
+Z51 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:\Users\hakon\Documents\DTU\Kandidat\Hakon_master_notes\1_Semester_(Spring_2026)\34349_FPGA_design_for_communication_systems\Gigabite_Ethernet\FIFO.vhd|
+Z52 !s107 C:\Users\hakon\Documents\DTU\Kandidat\Hakon_master_notes\1_Semester_(Spring_2026)\34349_FPGA_design_for_communication_systems\Gigabite_Ethernet\FIFO.vhd|
+!i113 1
+R13
+R14
+Asyn
+R2
+R3
+DEx4 work 4 fifo 0 22 KHET;gz=Dc@_7]CXI3?ao2
+!i122 32
+l77
+L36 81
+V^A<S;nNNz:ABSj74N<z]70
+!s100 9=<LMWEzPheIXRJ1zE9?M2
+R8
+32
+R49
+!i10b 1
+R50
+R51
+R52
+!i113 1
+R13
+R14
 Emac_learning
-Z38 w1773838523
+Z53 w1773838523
 R1
 R2
 R3
 !i122 11
 R4
-Z39 8C:\Users\hakon\Documents\DTU\Kandidat\Hakon_master_notes\1_Semester_(Spring_2026)\34349_FPGA_design_for_communication_systems\Gigabite_Ethernet\MAC_Learning.vhd
-Z40 FC:\Users\hakon\Documents\DTU\Kandidat\Hakon_master_notes\1_Semester_(Spring_2026)\34349_FPGA_design_for_communication_systems\Gigabite_Ethernet\MAC_Learning.vhd
+Z54 8C:\Users\hakon\Documents\DTU\Kandidat\Hakon_master_notes\1_Semester_(Spring_2026)\34349_FPGA_design_for_communication_systems\Gigabite_Ethernet\MAC_Learning.vhd
+Z55 FC:\Users\hakon\Documents\DTU\Kandidat\Hakon_master_notes\1_Semester_(Spring_2026)\34349_FPGA_design_for_communication_systems\Gigabite_Ethernet\MAC_Learning.vhd
 l0
 R7
 VW82YbERZOfOF;X[Cmo<dF0
 !s100 HQ:`R:F5aQ@fUBEA=[UW61
 R8
 32
-Z41 !s110 1773950405
+Z56 !s110 1773950405
 !i10b 1
-Z42 !s108 1773950405.000000
-Z43 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:\Users\hakon\Documents\DTU\Kandidat\Hakon_master_notes\1_Semester_(Spring_2026)\34349_FPGA_design_for_communication_systems\Gigabite_Ethernet\MAC_Learning.vhd|
-Z44 !s107 C:\Users\hakon\Documents\DTU\Kandidat\Hakon_master_notes\1_Semester_(Spring_2026)\34349_FPGA_design_for_communication_systems\Gigabite_Ethernet\MAC_Learning.vhd|
+Z57 !s108 1773950405.000000
+Z58 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:\Users\hakon\Documents\DTU\Kandidat\Hakon_master_notes\1_Semester_(Spring_2026)\34349_FPGA_design_for_communication_systems\Gigabite_Ethernet\MAC_Learning.vhd|
+Z59 !s107 C:\Users\hakon\Documents\DTU\Kandidat\Hakon_master_notes\1_Semester_(Spring_2026)\34349_FPGA_design_for_communication_systems\Gigabite_Ethernet\MAC_Learning.vhd|
 !i113 1
 R13
 R14
@@ -214,39 +298,39 @@ R3
 DEx4 work 12 mac_learning 0 22 W82YbERZOfOF;X[Cmo<dF0
 !i122 11
 l33
-Z45 L29 15
+Z60 L29 15
 VDQ08RkjG5`=LQlg@Qn==E1
 !s100 Kh0nL3hGUi5A3zQ9AQWoh3
 R8
 32
-R41
+R56
 !i10b 1
-R42
-R43
-R44
+R57
+R58
+R59
 !i113 1
 R13
 R14
 Escheduler
-Z46 w1773838941
+Z61 w1773838941
 R1
 R2
 R3
 !i122 12
 R4
-Z47 8C:\Users\hakon\Documents\DTU\Kandidat\Hakon_master_notes\1_Semester_(Spring_2026)\34349_FPGA_design_for_communication_systems\Gigabite_Ethernet\Scheduler.vhd
-Z48 FC:\Users\hakon\Documents\DTU\Kandidat\Hakon_master_notes\1_Semester_(Spring_2026)\34349_FPGA_design_for_communication_systems\Gigabite_Ethernet\Scheduler.vhd
+Z62 8C:\Users\hakon\Documents\DTU\Kandidat\Hakon_master_notes\1_Semester_(Spring_2026)\34349_FPGA_design_for_communication_systems\Gigabite_Ethernet\Scheduler.vhd
+Z63 FC:\Users\hakon\Documents\DTU\Kandidat\Hakon_master_notes\1_Semester_(Spring_2026)\34349_FPGA_design_for_communication_systems\Gigabite_Ethernet\Scheduler.vhd
 l0
-L18 1
+R48
 V0GF<k>3?8YOSOj:I72N?U0
 !s100 g7l[<`G7?DkIYI>`H5R?>0
 R8
 32
-R41
+R56
 !i10b 1
-R42
-Z49 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:\Users\hakon\Documents\DTU\Kandidat\Hakon_master_notes\1_Semester_(Spring_2026)\34349_FPGA_design_for_communication_systems\Gigabite_Ethernet\Scheduler.vhd|
-Z50 !s107 C:\Users\hakon\Documents\DTU\Kandidat\Hakon_master_notes\1_Semester_(Spring_2026)\34349_FPGA_design_for_communication_systems\Gigabite_Ethernet\Scheduler.vhd|
+R57
+Z64 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:\Users\hakon\Documents\DTU\Kandidat\Hakon_master_notes\1_Semester_(Spring_2026)\34349_FPGA_design_for_communication_systems\Gigabite_Ethernet\Scheduler.vhd|
+Z65 !s107 C:\Users\hakon\Documents\DTU\Kandidat\Hakon_master_notes\1_Semester_(Spring_2026)\34349_FPGA_design_for_communication_systems\Gigabite_Ethernet\Scheduler.vhd|
 !i113 1
 R13
 R14
@@ -257,38 +341,38 @@ R3
 DEx4 work 9 scheduler 0 22 0GF<k>3?8YOSOj:I72N?U0
 !i122 12
 l33
-R45
+R60
 VU:>@<M52<5AVB`W@0MMM_1
 !s100 ;CWXQI^Iadc4mK3C0nO<h1
 R8
 32
-R41
+R56
 !i10b 1
-R42
-R49
-R50
+R57
+R64
+R65
 !i113 1
 R13
 R14
 Etb_destination_reg
-Z51 w1775417195
+Z66 w1775417195
 R2
 R3
 !i122 29
 R4
-Z52 8C:\Users\hakon\Documents\DTU\Kandidat\Hakon_master_notes\1_Semester_(Spring_2026)\34349_FPGA_design_for_communication_systems\Gigabite_Ethernet\tb_Destination_Reg.vhd
-Z53 FC:\Users\hakon\Documents\DTU\Kandidat\Hakon_master_notes\1_Semester_(Spring_2026)\34349_FPGA_design_for_communication_systems\Gigabite_Ethernet\tb_Destination_Reg.vhd
+Z67 8C:\Users\hakon\Documents\DTU\Kandidat\Hakon_master_notes\1_Semester_(Spring_2026)\34349_FPGA_design_for_communication_systems\Gigabite_Ethernet\tb_Destination_Reg.vhd
+Z68 FC:\Users\hakon\Documents\DTU\Kandidat\Hakon_master_notes\1_Semester_(Spring_2026)\34349_FPGA_design_for_communication_systems\Gigabite_Ethernet\tb_Destination_Reg.vhd
 l0
 L5 1
 V`22bB^9kQ@M<aR><o9:gE0
 !s100 KOIQnd5UYL0jo6acX@K_f3
 R8
 32
-Z54 !s110 1775417205
+Z69 !s110 1775417205
 !i10b 1
-Z55 !s108 1775417205.000000
-Z56 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:\Users\hakon\Documents\DTU\Kandidat\Hakon_master_notes\1_Semester_(Spring_2026)\34349_FPGA_design_for_communication_systems\Gigabite_Ethernet\tb_Destination_Reg.vhd|
-Z57 !s107 C:\Users\hakon\Documents\DTU\Kandidat\Hakon_master_notes\1_Semester_(Spring_2026)\34349_FPGA_design_for_communication_systems\Gigabite_Ethernet\tb_Destination_Reg.vhd|
+Z70 !s108 1775417205.000000
+Z71 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:\Users\hakon\Documents\DTU\Kandidat\Hakon_master_notes\1_Semester_(Spring_2026)\34349_FPGA_design_for_communication_systems\Gigabite_Ethernet\tb_Destination_Reg.vhd|
+Z72 !s107 C:\Users\hakon\Documents\DTU\Kandidat\Hakon_master_notes\1_Semester_(Spring_2026)\34349_FPGA_design_for_communication_systems\Gigabite_Ethernet\tb_Destination_Reg.vhd|
 !i113 1
 R13
 R14
@@ -303,11 +387,52 @@ V;A_Ob9S_3iYlhDl3H6`Z]1
 !s100 2nk0eB0gHdHEe?Xd9048z3
 R8
 32
-R54
+R69
 !i10b 1
-R55
-R56
-R57
+R70
+R71
+R72
+!i113 1
+R13
+R14
+Etb_fifo
+Z73 w1776079485
+R2
+R3
+!i122 38
+R4
+Z74 8C:\Users\hakon\Documents\DTU\Kandidat\Hakon_master_notes\1_Semester_(Spring_2026)\34349_FPGA_design_for_communication_systems\Gigabite_Ethernet\tb_FIFO.vhd
+Z75 FC:\Users\hakon\Documents\DTU\Kandidat\Hakon_master_notes\1_Semester_(Spring_2026)\34349_FPGA_design_for_communication_systems\Gigabite_Ethernet\tb_FIFO.vhd
+l0
+L5 1
+V6OeW<b6I:BWR2K;zJg@ke2
+!s100 ka<GiG7P3MzoU1CEhgYY?0
+R8
+32
+Z76 !s110 1776079490
+!i10b 1
+Z77 !s108 1776079490.000000
+Z78 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:\Users\hakon\Documents\DTU\Kandidat\Hakon_master_notes\1_Semester_(Spring_2026)\34349_FPGA_design_for_communication_systems\Gigabite_Ethernet\tb_FIFO.vhd|
+Z79 !s107 C:\Users\hakon\Documents\DTU\Kandidat\Hakon_master_notes\1_Semester_(Spring_2026)\34349_FPGA_design_for_communication_systems\Gigabite_Ethernet\tb_FIFO.vhd|
+!i113 1
+R13
+R14
+Abehavior
+R2
+R3
+DEx4 work 7 tb_fifo 0 22 6OeW<b6I:BWR2K;zJg@ke2
+!i122 38
+l43
+L8 98
+VE5k1BoO=I19:l:N`I9NBC0
+!s100 I<e];V6c8GM2[^4klY:OD1
+R8
+32
+R76
+!i10b 1
+R77
+R78
+R79
 !i113 1
 R13
 R14

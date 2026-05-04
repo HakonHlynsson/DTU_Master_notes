@@ -3,7 +3,10 @@
 ---------------------------------------------------------------------
 -- Componant:   Destination_Reg
 -- Description: Stores the Destination in a register (assume MSB first)
--- 		 
+--
+--
+--https://www.ieee802.org/secmail/pdfYD89wBpRqH.pdf?utm_source=chatgpt.com
+-- "The transmission of data on IEEE 802.3  occurring LSB first within each octet"		 
 -- Changes	:
 --  		HH 5/4 creation of document and testing
 ---------------------------------------------------------------------

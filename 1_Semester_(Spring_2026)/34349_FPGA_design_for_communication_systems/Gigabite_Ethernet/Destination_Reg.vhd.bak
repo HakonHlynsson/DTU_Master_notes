@@ -5,7 +5,7 @@
 -- Description: Stores the Destination in a register (assume MSB first)
 -- 		 
 -- Changes	:
---  		HH 5/4 creation of document and I/O
+--  		HH 5/4 creation of document and testing
 ---------------------------------------------------------------------
 
 library IEEE;

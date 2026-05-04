@@ -24,7 +24,7 @@ Destination_MAC=[0x00,0x00,0x00,0x00,0x00,0x00];
 Source_MAC=[0x00,0x00,0x00,0x00,0x00,0x00];
 
 % Data that you want to send 46-1500 bytes
-Payload=repmat(uint8(0xAA),1,1499);
+Payload=repmat(uint8(0xAA),1,46);
 EtherType_Length = [uint8(bitshift(uint16(length(Payload)), -8)), uint8(bitand(uint16(length(Payload)), 255))];
 
 % Combining them all into on big vector 

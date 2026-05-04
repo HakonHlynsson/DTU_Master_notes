@@ -14,56 +14,55 @@ use IEEE.NUMERIC_STD.ALL;
 
 entity FCS_Reg is
     port (
+
 	--Input
 	Reset			: in std_logic;
     	Rx_Clk        		: in std_logic;
 	Rx_Valid		: in std_logic;
 	RX_Data   		: in std_logic_vector(7 downto 0);
 	FCS_Check		: in std_logic;
+
 	--Output
-	En 			: out std_logic 
+	fcs_error		: out std_logic 
+
 	);
 end FCS_Reg;
 
 architecture behavioral of FCS_Reg is
+
 -- Signal & Component Declaration
-	signal Reg           : std_logic_vector(31 downto 0); 	-- The 32 registers used to store data
-  	signal Counter       : unsigned(1 downto 0);		-- Counter that counts number of times 8 bits have been sendt
-	signal Count_payload : unsigned(12 downto 0);
-  	signal Data_insert   : std_logic_vector(7 downto 0);	-- Data that should be inserted
-  	signal Checksum_Start: std_logic;			-- Checksum goes high when the checksum is being inserted
-	signal fcs_error     : std_logic;			-- FCS error bit
-	signal payload_lenght: std_logic_vector(15 downto 0);	-- Length of the payload that is being sendt			-- 
+	Signal Reg           : std_logic_vector(31 downto 0); 	-- The 32 registers used to store data
+  	Signal Counter       : unsigned(1 downto 0);		-- Counter that counts number of times 8 bits have been sendt
+  	Signal Data_insert   : std_logic_vector(7 downto 0);	-- Data that should be inserted
+  	Signal Checksum_Start: std_logic;			-- Checksum goes high when the checksum is being inserted 
 
 Begin
 
 
 -- Invert the first and last 32 bits
-	Process(Rx_Valid)
-		Begin
-		
-		if(valid = '1' and ) then  
-
-
+Process(Rx_Valid)
+	Begin
+		If( Rx_Valid = '1' AND Counter < 3 ) then
+			Data_insert <= not RX_Data;	
+		Else  
+			Data_insert <= RX_Data;
 		End if;
-	End process
+End process;
 
 -- Parallel FCS setup
-	process(clk,reset)
+process(Rx_Clk)
 	Begin
-		if rising_edge(clk) then
+		if rising_edge(Rx_Clk) then
 			--Reset and count control 
 			if (Reset = '1') then -- reset the registor and Counter
 				Reg     <= (others => '0');
-			elsif (Rx_Valid = '1') then  
 				Counter <= (others => '0');
-				Count_payload <= (others => '0');
-			elsif(Counter < 21) then 		 
-				Counter <= Counter + 1;
-			elsif (Count_payload < payload_lenght + 4) then
-				Count_payload <= Count_payload + 1;
-			else
-				Checksum_Start <= '1';
+			elsif (Rx_Valid = '0') then   -- if valid goes low then nothing is being sent and therefore should reset 
+				Reg     <= (others => '0');
+				Counter <= (others => '0');
+			elsif (FCS_Check ='1') then  -- Goes high when FCS value is ariving
+				Counter <= (others => '0');
+				Checksum_Start <= '1' ;
 			end if;
 			
 			--Saveing the values of the 
@@ -112,17 +111,7 @@ Begin
             		Checksum_Start <= '0'; 
         		end if;
 		end if;
-	end process;
-
-
-
-
-
-
-
-
-
-
+end process;
 
 end behavioral;
 
