@@ -1,13 +1,11 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Calculation of the FCS value(useing the IEEE 802.3 MAC)
 % 
-% Description: 
-%               The following program should be used to co calculate the FCS
+% Description:  The following program should be used to co calculate the FCS
 %               value the should be sendt allong aside the messege so a
 %               testbench can send it.
 % 
-% Changes: 
-%           19/3 Document creation and 
+% Made by: Hákon Hlynsson 
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -20,8 +18,8 @@ degree = 32;
 % 802.3 MAC format
 Preamble= [0xAA, 0xAA, 0xAA, 0xAA, 0xAA, 0xAA, 0xAA];
 Start_of_Frame=[0xAB];
-Destination_MAC=[0x00,0x00,0x00,0x00,0x00,0x00];
-Source_MAC=[0x00,0x00,0x00,0x00,0x00,0x00];
+Destination_MAC=[0x00,0x00,0x00,0x00,0x00,0x00];% Select the Destination
+Source_MAC=[0x00,0x00,0x00,0x00,0x00,0x00];     % Select the Source
 
 % Data that you want to send 46-1500 bytes
 Payload=repmat(uint8(0xAA),1,46);
@@ -30,9 +28,8 @@ EtherType_Length = [uint8(bitshift(uint16(length(Payload)), -8)), uint8(bitand(u
 % Combining them all into on big vector 
 MAC_Frame = [Preamble, Start_of_Frame, Destination_MAC, Source_MAC, EtherType_Length, Payload];
 
-
-% convert from hex to binary vector
-binStr = reshape(dec2bin(MAC_Frame, 8).', 1, []); %Convert Hex to Binary string
+% Convert from hex to binary vector
+binStr = reshape(dec2bin(MAC_Frame, 8).', 1, []); % Convert Hex to string
 M = double(binStr) - double('0'); % convert from ascii to numbers a binary vector
 
 % Adding 32 zeros for the division
