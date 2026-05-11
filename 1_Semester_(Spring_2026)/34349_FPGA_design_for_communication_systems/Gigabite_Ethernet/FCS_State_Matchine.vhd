@@ -63,7 +63,7 @@ begin
     begin
 
         next_state <= current_state; 
-    	Counter_En <= '0'; 
+    	Counter_En <= '1'; 
     	Done_Reg   <= '0';
     	Dst_En     <= '0';
     	Src_En     <= '0';
@@ -72,7 +72,7 @@ begin
         case current_state is
 
             when IDLE =>
-
+		Counter_En <= '0';
                 if  Rx_Data = X"AA" then
                     Counter_En <= '1';
                     next_state <= Preamble;
